@@ -1,0 +1,24 @@
+body {
+    
+    text-align:center;
+    font-family:"Exo 2", sans-seriff;
+    background-color: cornflowerblue;
+    font-style: italic;
+    align-items: center;      /* Vertically centers the text */
+    
+    min-height: 100vh;  
+    
+
+}
+.body {
+  display: flex;
+  align-items: center;       /* Aligns text vertically in the center */
+  justify-content: center;   /* Optional: Aligns text horizontally in the center */
+  height: 100vh;             /* Ensure the container has a defined height */
+}
+
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique
+
+}
