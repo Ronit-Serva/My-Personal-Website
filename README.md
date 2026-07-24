@@ -1,2 +1,2 @@
 # My-Personal-Website
-The very first website I'm building while learning from stardance personal website workshop.
+My very own hand-coded personal website. Learning to build from HC Stardance Workshop. 
