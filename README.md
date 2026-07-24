@@ -1,2 +1,4 @@
-# My-Personal-Website
-My very own hand-coded personal website. Learning to build from HC Stardance Workshop. 
+# Ronit's Cool Website
+This is the v1 for my very first personal website. I built it using CSS and HTML. 
+
+I hope to make it better in coming days. 
