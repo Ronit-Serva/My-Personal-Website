@@ -3,10 +3,17 @@ body {
     font-family:"Exo 2", sans-seriff;
     background-image: url("assets/bg1.png");
     font-style: italic;
-    align-items: center;      /* Vertically centers the text */
-    border-style: solid;
-    /*min-height: 100vh; */ 
+    align-items: center;      /* Vertically centers the text */ 
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; /* Removes default browser spacing */
+    
+}
+
+.content {
+    flex: 1;
 }
 
 .intro {
@@ -16,8 +23,8 @@ body {
     left: 676px;
     height: 316.5px;
     width: 815px;
-    border-style: solid;
-    border: 2.5px solid rgb(255, 255, 255);
+    border: 2.5px solid rgb(10, 10, 10);
+    border-radius: 19px;
     text-align: center;
 }
 
@@ -27,11 +34,12 @@ body {
     position: absolute;
     top: 137px;
     left:178px;
-    border: 2.5px solid rgb(255, 255, 255)
+    border: 2.5px solid rgb(9, 9, 9);
+    border-radius: 19px;
 }
 
 .github-logo {
-    background-color: aliceblue;
+    background-color: rgb(253, 254, 254);
     width: 55px;
     height: auto; /* Keeps the aspect ratio intact */
     position: absolute;
@@ -54,4 +62,14 @@ body {
 h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style:oblique
+}
+
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    
+
 }
