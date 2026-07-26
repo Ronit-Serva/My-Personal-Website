@@ -1,39 +1,57 @@
 body {
-    
     text-align:center;
     font-family:"Exo 2", sans-seriff;
-    background-image: radial-gradient(#ffea00, #ff7300);
+    background-image: url("assets/bg1.png");
     font-style: italic;
     align-items: center;      /* Vertically centers the text */
     border-style: solid;
-    min-height: 100vh;  
-    
-
+    /*min-height: 100vh; */ 
+    font-size: 28px;
 }
+
 .intro {
-    background-color: rgb(147, 226, 173);
+    background-color: rgb(137, 138, 137);
     position: absolute;
-    top:150px;
-    left: 800px;
-    height: 300px;
-    width: 800px;
+    top:137px;
+    left: 676px;
+    height: 316.5px;
+    width: 815px;
     border-style: solid;
-    border: 2px solid black;
+    border: 2.5px solid rgb(255, 255, 255);
     text-align: center;
-    
-    
 }
 
-img {
-    width: 400px;
+.profile-photo {
+    width: 316.5px;
     height: auto; /* Keeps the aspect ratio intact */
     position: absolute;
-    top: 155px;
-    left:200px;
+    top: 137px;
+    left:178px;
+    border: 2.5px solid rgb(255, 255, 255)
+}
+
+.github-logo {
+    background-color: aliceblue;
+    width: 55px;
+    height: auto; /* Keeps the aspect ratio intact */
+    position: absolute;
+    top: 18px;
+    left:1418px;
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 50%;
 }
+
+.linkedin-logo {
+    background-color: aliceblue;
+    width: 60px;
+    height: auto; /* Keeps the aspect ratio intact */
+    position: absolute;
+    top: 18px;
+    left:1327px;
+    border-radius: 50%;
+}
+
 h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-style:oblique
-
 }
