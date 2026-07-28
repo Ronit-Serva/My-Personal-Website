@@ -1,75 +1,75 @@
+:root {
+    --bg: rgb(22, 49, 105);
+    --fg: #e7edf5;
+    --grid-line: rgba(255, 255, 255, 0.045);
+    --border: rgba(255, 255, 255, 0.1);
+    --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", "Courier New", monospace;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    background-color: black;
+    height: 60px;
+    justify-content: baseline;
+}
+
+.logo {
+    background-color: red;
+    border-radius: 5px; 
+    position: relative;
+    left: 10%;
+    top: 10px;
+    width: 8%;
+    height: 40px;
+    text-align: center;  
+}
+
+#linkedin {
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    left: 85%;
+    top: 18%;
+    height: 40px;
+    width: auto;
+}
+
+#github {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    left: 88%;
+    top: 18%;
+    height: 40px;
+    width: auto;
+}
+
+
 body {
-    text-align:center;
-    font-family:"Exo 2", sans-seriff;
-    background-image: url("assets/bg1.png");
-    font-style: italic;
-    align-items: center;      /* Vertically centers the text */ 
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0; /* Removes default browser spacing */
-    
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-display);
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.content {
-    flex: 1;
-}
 
-.intro {
-    background-color: rgb(137, 138, 137);
-    position: absolute;
-    top:137px;
-    left: 676px;
-    height: 316.5px;
-    width: 815px;
-    border: 2.5px solid rgb(10, 10, 10);
-    border-radius: 19px;
-    text-align: center;
-}
-
-.profile-photo {
-    width: 316.5px;
-    height: auto; /* Keeps the aspect ratio intact */
-    position: absolute;
-    top: 137px;
-    left:178px;
-    border: 2.5px solid rgb(9, 9, 9);
-    border-radius: 19px;
-}
-
-.github-logo {
-    background-color: rgb(253, 254, 254);
-    width: 55px;
-    height: auto; /* Keeps the aspect ratio intact */
-    position: absolute;
-    top: 18px;
-    left:1418px;
-    border: 1.5px solid rgb(255, 255, 255);
-    border-radius: 50%;
-}
-
-.linkedin-logo {
-    background-color: aliceblue;
-    width: 60px;
-    height: auto; /* Keeps the aspect ratio intact */
-    position: absolute;
-    top: 18px;
-    left:1327px;
-    border-radius: 50%;
-}
-
-h1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-style:oblique
-}
-
-footer {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    font-style: normal;
-    
-
+.grid-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
