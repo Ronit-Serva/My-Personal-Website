@@ -12,43 +12,16 @@
   box-sizing: border-box;
 }
 
-header {
-    position: sticky;
-    background-color: black;
-    height: 60px;
-    justify-content: baseline;
-}
 
-.logo {
-    background-color: red;
-    border-radius: 5px; 
-    position: relative;
-    left: 10%;
-    top: 10px;
-    width: 8%;
-    height: 40px;
-    text-align: center;  
-}
-
-#linkedin {
-    border-radius: 50%;
-    border: 1px solid white;
-    position: absolute;
-    left: 85%;
-    top: 18%;
-    height: 40px;
-    width: auto;
-}
-
-#github {
-    background-color: white;
-    border-radius: 50%;
-    border: 1px solid white;
-    position: absolute;
-    left: 88%;
-    top: 18%;
-    height: 40px;
-    width: auto;
+.grid-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 40px 40px;
 }
 
 
@@ -63,13 +36,98 @@ body {
 }
 
 
-.grid-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background-image:
-        linear-gradient(var(--grid-line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-    background-size: 40px 40px;
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2; 
+    background-color: black;
+    height: 60px;
+    justify-content: baseline;
 }
+
+
+.logo {
+    background-color: red;
+    border-radius: 5px; 
+    position: relative;
+    left: 10%;
+    top: 10px;
+    width: 8%;
+    height: 40px;
+    text-align: center;  
+}
+
+
+#linkedin {
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    left: 85%;
+    top: 18%;
+    height: 40px;
+    width: auto;
+}
+
+
+#github {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    left: 88%;
+    top: 18%;
+    height: 40px;
+    width: auto;
+}
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    position: inherit;
+    width: 1360px;
+    height: 640px;
+
+} 
+    
+
+main {
+    position: relative;
+    width: 1360px;
+    height: 640px;
+    top: 100px;
+    left: 280px;
+}
+
+.profile-image {
+    border: 0.05px solid white;
+    border-radius: 20px;
+    height: 400px;
+    width: auto;
+    position: absolute; 
+    left: 40px;
+}
+
+
+.intro-text {
+    border: 1px solid rgb(217, 27, 27); 
+    position: absolute;
+    left: 520px;
+    top: 120px;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(33, 58, 78);
+    border: 1px solid white;
+    border-radius: 20px; 
+    text-align:center;
+
+}
+
+footer {
+    position: relative; 
+    bottom: -180px;
+    text-align: center;
+    margin: 0px;
+}
+
+
