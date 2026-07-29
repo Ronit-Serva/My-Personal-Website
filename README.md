@@ -1,6 +1,6 @@
 # Ronit's Corner of the Web (v2)
 
-****<img width="1013" height="354" alt="image" src="assets/home-page.jpeg" />
+****<img width="1013" height="354" alt="image" src="assets/home-page-v3.jpeg" />
 
 This is my personal website I'm building using pure CSS and HTML.
 
